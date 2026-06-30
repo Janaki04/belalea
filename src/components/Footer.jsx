@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify'; 
-import image from "../assets/image.png";
+import image from "../assets/Image.png";
 import logo from "../assets/Logo.svg";
 import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
