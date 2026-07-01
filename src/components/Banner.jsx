@@ -6,7 +6,7 @@ export default function Banner({
 }) {
   return (
     <div 
-      className="w-full min-h-[260px] sm:min-h-[260px] bg-cover bg-center flex items-center justify-center px-4"
+      className="w-full min-h-[260px] sm:min-h-[260px] bg-cover bg-center font-roboto flex items-center justify-center px-4"
       style={{ backgroundImage: `url('${backgroundImage}')` }}
     >
       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#2A4454] text-center tracking-wide select-none">

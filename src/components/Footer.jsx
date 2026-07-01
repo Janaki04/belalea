@@ -6,6 +6,8 @@ import image1 from "../assets/1.png";
 import image2 from "../assets/2.png";
 import image3 from "../assets/3.png";
 import image4 from "../assets/4.png";
+import { useNavigate, Link, NavLink } from 'react-router-dom';
+
 
 export default function Footer() {
   const [email, setEmail] = useState('');
@@ -46,7 +48,7 @@ export default function Footer() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Введите ваш e-mail адрес"
               required
-              className="w-full sm:flex-1 bg-white rounded-xl px-5 py-4 text-[#2E4756] placeholder-gray-400 focus:outline-none text-[15px]"
+              className="w-full sm:flex-1 bg-white rounded-xl px-5 py-4 text-[#274C5B] placeholder-gray-400 focus:outline-none text-[15px]"
             />
             <button
               type="submit"
@@ -60,21 +62,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-4 text-center md:text-left items-start">
           
           <div className="md:border-r border-gray-100 md:pr-8 space-y-5 md:text-right">
-            <h3 className="text-[#2A4454] font-bold text-xl mb-4">Contact Us</h3>
+            <h3 className="text-[#274C5B] font-bold text-xl mb-4">Contact Us</h3>
             <div className="space-y-1">
-              <span className="block text-[#2A4454] font-bold text-sm">Email</span>
+              <span className="block text-[#274C5B] font-bold text-sm">Email</span>
               <a href="mailto:needhelp@Organia.com" className="text-gray-500 hover:text-[#83B67C] text-[15px] transition-colors">
                 needhelp@Organia.com
               </a>
             </div>
             <div className="space-y-1">
-              <span className="block text-[#2A4454] font-bold text-sm">Phone</span>
+              <span className="block text-[#274C5B] font-bold text-sm">Phone</span>
               <a href="tel:666888888" className="text-gray-500 hover:text-[#83B67C] text-[15px] transition-colors">
                 666 888 888
               </a>
             </div>
             <div className="space-y-1">
-              <span className="block text-[#2A4454] font-bold text-sm">Address</span>
+              <span className="block text-[#274C5B] font-bold text-sm">Address</span>
               <p className="text-gray-500 text-[15px] leading-relaxed">
                 88 road, borklyn street, USA
               </p>
@@ -106,16 +108,27 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="md:border-l border-gray-100 md:pl-8 space-y-3">
+         <div className="md:border-l border-gray-100 md:pl-8 space-y-3">
             <h3 className="text-[#2A4454] font-bold text-xl mb-4">Utility Pages</h3>
-            <ul className="space-y-3 text-gray-500 text-[15px]">
-              {['Style Guide', '404 Not Found', 'Password Protected', 'Licences', 'Changelog'].map((item) => (
-                <li key={item}>
-                  <a href={`#${item.toLowerCase().replace(/ /g, '-')}`} className="hover:text-[#83B67C] transition-colors">
-                    {item}
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-3 text-gray-500 text-[15px] font-medium">
+              <li>
+                <a href="#style-guide" className="hover:text-[#83B67C] transition-colors">Style Guide</a>
+              </li>
+              <li>
+                {/* Используем Link для бесшовного перехода на страницу 404 */}
+                <Link to="/404" className="hover:text-[#83B67C] transition-colors font-semibold text-[#2A4454]">
+                  404 Not Found
+                </Link>
+              </li>
+              <li>
+                <a href="#password-protected" className="hover:text-[#83B67C] transition-colors">Password Protected</a>
+              </li>
+              <li>
+                <a href="#licences" className="hover:text-[#83B67C] transition-colors">Licences</a>
+              </li>
+              <li>
+                <a href="#changelog" className="hover:text-[#83B67C] transition-colors">Changelog</a>
+              </li>
             </ul>
           </div>
 

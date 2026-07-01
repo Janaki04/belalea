@@ -131,7 +131,7 @@ export default function AdditionalSections() {
               <p className="text-gray-400 text-xs line-clamp-2">
                 Simply dummy text of the printing and typesetting industry. Lorem Ipsum.
               </p>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#E9C874] hover:text-[#DCB965] uppercase tracking-wider pt-1">
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
                 Подробнее <span>➔</span>
               </span>
             </div>
@@ -154,7 +154,7 @@ export default function AdditionalSections() {
               <p className="text-gray-400 text-xs line-clamp-2">
                 Simply dummy text of the printing and typesetting industry. Lorem Ipsum.
               </p>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#E9C874] hover:text-[#DCB965] uppercase tracking-wider pt-1">
+              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
                 Подробнее <span>➔</span>
               </span>
             </div>

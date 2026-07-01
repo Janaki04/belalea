@@ -46,7 +46,7 @@ export default function AboutAndBenefitsSection() {
     <>
     <Banner    title="О нас" 
             backgroundImage={about}/>
-    <div className="w-full bg-white text-[#2A4454] font-sans">
+    <div className="w-full bg-white text-[#2A4454] font-roboto">
    
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
         <div className="lg:col-span-6 flex justify-center items-center order-1">

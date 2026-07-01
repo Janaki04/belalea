@@ -15,7 +15,7 @@ export default function HeroSection() {
         
 
         <div 
-          className="relative w-full overflow-hidden bg-[#F9F6F0] min-h-[580px] flex items-center sm:p-12 lg:p-20 bg-contain bg-right sm:bg-center"
+          className="relative w-full overflow-hidden bg-[#F9F6F0] min-h-[580px] flex items-center sm:p-12 lg:p-20 bg-cover bg-right sm:bg-center"
           style={{
            
             backgroundImage: `url('${image}')`
@@ -30,7 +30,7 @@ export default function HeroSection() {
             </h1>
             <a 
               href="#catalog" 
-              className="flex w-fit items-center gap-2 bg-[#E9C874] hover:bg-[#DCB965] text-[#2A4454] font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full shadow-sm transition-all"
+              className="flex w-fit items-center gap-2 bg-[#EFD372] hover:bg-[#DCB965] text-[#2A4454] font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full shadow-sm transition-all"
             >
               В КАТАЛОГ
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

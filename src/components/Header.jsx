@@ -18,12 +18,12 @@ export default function Header() {
 
   const getNavLinkClass = ({ isActive }) =>
     `transition-colors duration-200 text-[15px] font-medium ${
-      isActive ? 'text-[#7BB074] font-semibold' : 'text-[#2E4756] hover:text-[#7BB074]'
+      isActive ? 'text-[#7BB074] font-semibold' : 'text-[#274C5B] hover:text-[#7BB074]'
     }`;
 
   const getMobileNavLinkClass = ({ isActive }) =>
     `transition-colors duration-200 block text-base font-medium ${
-      isActive ? 'text-[#7BB074] font-semibold pl-2 border-l-2 border-[#7BB074]' : 'text-[#2E4756] hover:text-[#7BB074]'
+      isActive ? 'text-[#7BB074] font-semibold pl-2 border-l-2 border-[#7BB074]' : 'text-[#274C5B] hover:text-[#7BB074]'
     }`;
 
   return (
@@ -54,7 +54,7 @@ export default function Header() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Поиск..."
-                className="w-full bg-[#F8F9FA] rounded-full py-2.5 pl-4 pr-12 text-[#2E4756] focus:outline-none focus:ring-1 focus:ring-[#7BB074] transition-all text-sm"
+                className="w-full bg-[#F8F9FA] rounded-full py-2.5 pl-4 pr-12 text-[#274C5B] focus:outline-none focus:ring-1 focus:ring-[#7BB074] transition-all text-sm"
               />
               <button 
                 type="submit" 
@@ -69,7 +69,7 @@ export default function Header() {
 
             <Link 
               to="/contacts" 
-              className="flex items-center gap-3 border border-[#E9ECEF] rounded-full py-1.5 pl-1.5 pr-5 hover:shadow-sm transition-all text-[#2E4756] font-medium text-[15px]"
+              className="flex items-center gap-3 border border-[#E9ECEF] rounded-full py-1.5 pl-1.5 pr-5 hover:shadow-sm transition-all text-[#274C5B] font-medium text-[15px]"
             >
               <div className="w-9 h-9 bg-[#2A4454] rounded-full flex items-center justify-center">
                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">

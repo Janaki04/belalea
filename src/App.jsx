@@ -10,15 +10,11 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Contact from './pages/contact/Contact';
 import Shop from './pages/shop/Shop';
 import Blog from './pages/blog/Blog';
+import ProductDetail from './pages/shop/ProductDetail';
+import BlogPostDetail from './pages/blog/BlogPostDetail';
+import NotFound from "./components/NotFound"
  
 
-const Home = () => <div className="p-8 max-w-7xl mx-auto text-xl">Главная страница интернет-магазина</div>;
-const Catalog = () => <div className="p-8 max-w-7xl mx-auto text-xl">Каталог продукции (Масла, Мука, Семена)</div>;
-const Dealers = () => <div className="p-8 max-w-7xl mx-auto text-xl">Информация для корпоративных дилеров</div>;
-const News = () => <div className="p-8 max-w-7xl mx-auto text-xl">Блог и новости органических продуктов</div>;
-const Contacts = () => <div className="p-8 max-w-7xl mx-auto text-xl">Контактная информация и карта проезда</div>;
-const SearchResults = () => <div className="p-8 max-w-7xl mx-auto text-xl">Результаты поиска по сайту</div>;
-const NotFound = () => <div className="p-8 max-w-7xl mx-auto text-xl text-red-500 font-bold">404 — Страница не найдена</div>;
 
 export default function AppRoutes() {
   return (
@@ -34,8 +30,12 @@ export default function AppRoutes() {
           <Route path="/" element={<HeroSection />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contacts" element={<Contact />} />
+        <Route path="/blog/:id" element={<BlogPostDetail />} />
+        <Route path="/404" element={<NotFound />} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer/>
