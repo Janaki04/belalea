@@ -1,6 +1,7 @@
 import React from 'react';
 import { toast } from 'react-toastify';
 import image2 from "../../assets/Product3.png"
+import { useNavigate } from 'react-router-dom';
 
 
 // Данные лучших предложений месяца из макета
@@ -12,12 +13,14 @@ const BEST_OFFERS = [
 ];
 
 export default function BestOffersSection() {
+    const navigate = useNavigate();
   
   const handleProductClick = (title) => {
     toast.info(`Вы открыли карточку: ${title}`);
   };
 
   const handleSeeAllClick = () => {
+    navigate("/shop");
     toast.success('Переход ко всем предложениям месяца');
   };
 

@@ -13,6 +13,7 @@ import Blog from './pages/blog/Blog';
 import ProductDetail from './pages/shop/ProductDetail';
 import BlogPostDetail from './pages/blog/BlogPostDetail';
 import NotFound from "./components/NotFound"
+import ScrollToTop from './components/ScrollToTop';
  
 
 
@@ -20,6 +21,7 @@ export default function AppRoutes() {
   return (
     <>
     <Router>
+      <ScrollToTop />
       {/* Шапка сайта зафиксирована на всех страницах верхнего уровня */}
       <Header />
       

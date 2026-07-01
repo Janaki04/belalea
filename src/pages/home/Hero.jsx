@@ -6,6 +6,8 @@ import ProductSection from './ProductSection';
 import TestimonialsSection from './TestimonialsSection';
 import BestOffersSection from './BestOffersSection';
 import AdditionalSections from './AdditionalSections';
+import { useNavigate, Link, NavLink } from 'react-router-dom';
+
 
 export default function HeroSection() {
   return (
@@ -28,15 +30,15 @@ export default function HeroSection() {
             <h1 className="text-start text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2A4454] leading-tight">
              Масла и мука <br/> из фермерского<br/>сырья
             </h1>
-            <a 
-              href="#catalog" 
+            <Link
+                to="/shop"
               className="flex w-fit items-center gap-2 bg-[#EFD372] hover:bg-[#DCB965] text-[#2A4454] font-bold text-xs uppercase tracking-wider px-6 py-3.5 rounded-full shadow-sm transition-all"
             >
               В КАТАЛОГ
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -41,6 +41,7 @@ export default function Header() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
+            <NavLink to="/" className={getNavLinkClass}>oMeH</NavLink>
             <NavLink to="/about" className={getNavLinkClass}>О нас</NavLink>
             <NavLink to="/shop" className={getNavLinkClass}>Каталог</NavLink>
             <NavLink to="/blog" className={getNavLinkClass}>Блог</NavLink>

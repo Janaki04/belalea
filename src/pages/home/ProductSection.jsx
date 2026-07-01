@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import image from "../../assets/Product1.png"
 import image1 from "../../assets/Product2.png"
 import image2 from "../../assets/Product3.png"
+import { useNavigate } from 'react-router-dom';
 
 
 const INITIAL_PRODUCTS = [
@@ -17,6 +18,7 @@ const INITIAL_PRODUCTS = [
 ];
 
 export default function ProductSection() {
+    const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState('Все');
 
   const handleProductClick = (productName) => {
@@ -84,7 +86,7 @@ export default function ProductSection() {
             </div>
 
             <div className="pt-4">
-              <button className="bg-[#2A4454] hover:bg-[#1E323F] text-white font-medium text-sm rounded-xl px-7 py-3.5 transition-colors shadow-sm flex items-center gap-2">
+              <button onClick={()=>navigate("blog")} className="bg-[#2A4454] hover:bg-[#1E323F] text-white font-medium text-sm rounded-xl px-7 py-3.5 transition-colors shadow-sm flex items-center gap-2">
                 Подробнее <span>→</span>
               </button>
             </div>
@@ -156,7 +158,7 @@ export default function ProductSection() {
           <button 
             onClick={() => {
               setSelectedCategory('Все');
-              toast.success('Загружен полный список товаров каталога!');
+              navigate("shop");
             }}
             className="bg-[#2A4454] hover:bg-[#1E323F] text-white font-medium text-sm rounded-xl px-8 py-4 transition-colors shadow-sm flex items-center gap-2 mx-auto"
           >

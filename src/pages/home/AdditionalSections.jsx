@@ -6,8 +6,10 @@ import image2 from "../../assets/A3.png"
 import image3 from "../../assets/A4.png"
 import image4 from "../../assets/A5.png"
 import image5 from "../../assets/A6.jpg"
+import { useNavigate } from 'react-router-dom';
 
 export default function AdditionalSections() {
+  const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -131,7 +133,7 @@ export default function AdditionalSections() {
               <p className="text-gray-400 text-xs line-clamp-2">
                 Simply dummy text of the printing and typesetting industry. Lorem Ipsum.
               </p>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
+              <span onClick={()=>navigate("/blog")} className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
                 Подробнее <span>➔</span>
               </span>
             </div>
@@ -154,7 +156,7 @@ export default function AdditionalSections() {
               <p className="text-gray-400 text-xs line-clamp-2">
                 Simply dummy text of the printing and typesetting industry. Lorem Ipsum.
               </p>
-              <span className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
+              <span onClick={()=>navigate("/blog")} className="inline-flex items-center gap-1 text-xs font-bold text-[#EFD372] hover:text-[#DCB965] uppercase tracking-wider pt-1">
                 Подробнее <span>➔</span>
               </span>
             </div>
